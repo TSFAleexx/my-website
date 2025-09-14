@@ -1,102 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - The FAMG</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - The FAMG</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-    body {
-      background: linear-gradient(135deg, #ff0000, #ff0000, #00ff00, #00ff00, #ff69b4, #ff69b4, #800080, #800080);
-      background-size: 800% 800%;
-      animation: gradientAnimation 8s ease infinite;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
+body {
+  background: linear-gradient(135deg,
+    #ff0000, #ff0000,
+    #00ff00, #00ff00,
+    #ff69b4, #ff69b4,
+    #800080, #800080,
+    #ff0000, #800080
+  );
+  background-size: 1200% 1200%;
+  animation: gradientAnimation 12s ease infinite;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-    @keyframes gradientAnimation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    nav {
-      background: rgba(0,0,0,0.5);
-      padding: 15px;
-    }
+nav {
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
 
-    nav a:hover {
-      color: #1e90ff;
-    }
+nav a:hover {
+  color: #1e90ff;
+}
 
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 50px 20px;
-    }
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
-    }
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
 
-    .button-container a {
-      display: inline-block;
-      padding: 15px 30px;
-      background: rgba(0,0,0,0.5);
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.2rem;
-      transition: background 0.3s ease;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
+.button-container a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 
-    .button-container a:hover {
-      background: rgba(0,0,0,0.7);
-    }
-
-  </style>
+.button-container a:hover {
+  background: rgba(0,0,0,0.7);
+}
+</style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
 
-  <div class="container">
-    <h1>ℹ️ About FAMG</h1>
-    <p>This page is the About section.</p>
+<div class="container">
+  <h1>ℹ️ About FAMG</h1>
+  <p>This page is the About section.</p>
 
-    <div class="button-container">
-      <a href="https://sites.google.com/view/the-famg/about-us?authuser=0" target="_blank">More</a>
-    </div>
+  <div class="button-container">
+    <a href="https://sites.google.com/view/the-famg/about-us?authuser=0" target="_blank">More</a>
   </div>
+</div>
 </body>
 </html>
