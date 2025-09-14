@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - The FAMG</title>
+<title>Home - The FAMG</title>
 <style>
 html, body {
   height: 100%;
@@ -12,15 +12,16 @@ html, body {
 }
 
 body {
-  background: linear-gradient(135deg,
-    #ff0000, #ff0000,
-    #00ff00, #00ff00,
-    #ff69b4, #ff69b4,
-    #800080, #800080,
-    #ff0000, #800080
-  );
-  background-size: 1200% 1200%;
-  animation: gradientAnimation 12s ease infinite;
+  /* Evenly spaced colors so red is prominent */
+  background: linear-gradient(135deg, 
+    #ff0000 0%, 
+    #ff0000 20%, 
+    #00ff00 40%, 
+    #ff69b4 60%, 
+    #800080 80%, 
+    #800080 100%);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
   color: white;
   text-align: center;
   display: flex;
@@ -30,9 +31,7 @@ body {
 
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
-  25% { background-position: 50% 50%; }
   50% { background-position: 100% 50%; }
-  75% { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
 
@@ -49,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #1e90ff;
+  color: #ff4757;
 }
 
 .container {
@@ -72,15 +71,22 @@ p {
   text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
 .button-container a {
-  display: inline-block;
-  padding: 15px 30px;
+  flex: 1 1 150px;
+  max-width: 220px;
+  padding: 15px 25px;
   background: rgba(0,0,0,0.5);
   color: white;
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 1.2rem;
   transition: background 0.3s ease;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -98,11 +104,14 @@ p {
 </nav>
 
 <div class="container">
-  <h1>ℹ️ About FAMG</h1>
-  <p>This page is the About section.</p>
+  <h1>Welcome to the FAMG Website! 🌐</h1>
+  <p>This is the <strong>Home Page</strong>.</p>
 
   <div class="button-container">
-    <a href="https://sites.google.com/view/the-famg/about-us?authuser=0" target="_blank">More</a>
+    <a href="https://sites.google.com/view/the-famg/home" target="_blank">Other Website</a>
+    <a href="https://www.youtube.com/@THE-FAMG" target="_blank">YouTube</a>
+    <a href="https://www.youtube.com/@famg-studios" target="_blank">YouTube2</a>
+    <a href="https://rick.nerial.uk/video.mp4" target="_blank">idk</a>
   </div>
 </div>
 </body>
