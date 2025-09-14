@@ -1,102 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord - The FAMG</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: linear-gradient(90deg, #ff0000, #00ff00, #ff69b4, #800080, #ff0000);
-      background-size: 400% 100%;
-      background-repeat: repeat-x;
-      animation: scrollGradient 15s linear infinite;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    @keyframes scrollGradient {
-      0% { background-position: 0 0; }
-      100% { background-position: 400% 0; }
-    }
-
-    nav {
-      background: rgba(0,0,0,0.5);
-      padding: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #ff4757;
-    }
-
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 50px 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
-    }
-
-    .button-container a {
-      display: inline-block;
-      padding: 15px 30px;
-      background: rgba(0,0,0,0.5);
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.2rem;
-      transition: background 0.3s ease;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-    .button-container a:hover {
-      background: rgba(0,0,0,0.7);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord - The FAMG</title>
+<style>
+html, body { height:100%; margin:0; font-family:Arial,sans-serif; }
+body {
+  background: linear-gradient(90deg,#ff0000,#00ff00,#ff69b4,#800080,#ff0000);
+  background-size: 400% 100%;
+  background-repeat: repeat-x;
+  animation: scrollGradient 15s linear infinite;
+  color:white;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+@keyframes scrollGradient {0%{background-position:0 0;}100%{background-position:400% 0;}}
+nav { background: rgba(0,0,0,0.5); padding:15px; }
+nav a { color:white; text-decoration:none; margin:0 10px; font-weight:bold; }
+nav a:hover { color:#ff4757; }
+nav a.active { color:#ffdd57; text-decoration:underline; }
+.container { flex:1; display:flex; flex-direction:column; justify-content:center; padding:50px 20px; }
+h1 { font-size:2.5rem; margin-bottom:15px; text-shadow:2px 2px 8px rgba(0,0,0,0.5); }
+p { font-size:1.2rem; margin-bottom:30px; text-shadow:1px 1px 6px rgba(0,0,0,0.4); }
+.button-container a { display:inline-block; padding:15px 30px; background:rgba(0,0,0,0.5); color:white; text-decoration:none; border-radius:10px; font-weight:bold; font-size:1.2rem; transition:background 0.3s ease; text-align:center; box-shadow:0 4px 15px rgba(0,0,0,0.3);}
+.button-container a:hover { background:rgba(0,0,0,0.7);}
+</style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="discord.html">Discord</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="discord.html" class="active">Discord</a>
+</nav>
 
-  <div class="container">
-    <h1>💬 Join Our Discord!</h1>
-    <p>Click below to join the FAMG Discord server.</p>
-
-    <div class="button-container">
-      <a href="https://discord.gg/mgKCdPSrCk" target="_blank">Join Discord</a>
-    </div>
+<div class="container">
+  <h1>💬 Join Our Discord!</h1>
+  <p>Click below to join the FAMG Discord server.</p>
+  <div class="button-container">
+    <a href="https://discord.gg/mgKCdPSrCk" target="_blank">Join Discord</a>
   </div>
+</div>
 </body>
 </html>
