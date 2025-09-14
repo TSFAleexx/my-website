@@ -12,15 +12,14 @@ html, body {
 }
 
 body {
-  background: linear-gradient(135deg, 
+  background: linear-gradient(90deg,
     #ff0000 0%, 
-    #ff0000 20%, 
-    #00ff00 40%, 
-    #ff69b4 60%, 
-    #800080 80%, 
-    #800080 100%);
-  background-size: 600% 600%;
-  animation: gradientAnimation 10s ease infinite;
+    #00ff00 25%, 
+    #ff69b4 50%, 
+    #800080 75%, 
+    #ff0000 100%);
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s linear infinite;
   color: white;
   text-align: center;
   display: flex;
@@ -29,9 +28,8 @@ body {
 }
 
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% { background-position: 0% 0%; }
+  100% { background-position: -100% 0%; }
 }
 
 nav {
