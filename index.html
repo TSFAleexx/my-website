@@ -5,59 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - The FAMG</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
       color: white;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     nav {
-      background: #333;
+      background: rgba(0,0,0,0.5);
       padding: 15px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
     }
+
     nav a:hover {
       color: #ff4757;
     }
+
     .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 50px 20px;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     }
+
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
     }
+
     .button-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
-      margin-top: 30px;
     }
+
     .button-container a {
       flex: 1 1 150px;
       max-width: 220px;
-      padding: 12px 25px;
-      background: #ff4757;
+      padding: 15px 25px;
+      background: rgba(0,0,0,0.5);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
       transition: background 0.3s ease;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
+
     .button-container a:hover {
-      background: #ff6b81;
+      background: rgba(0,0,0,0.7);
     }
+
   </style>
 </head>
 <body>
@@ -65,6 +96,7 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
   </nav>
+
   <div class="container">
     <h1>Welcome to the FAMG Website! 🌐</h1>
     <p>This is the <strong>Home Page</strong>.</p>
