@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - The FAMG</title>
   <style>
     body {
@@ -19,21 +20,32 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 10px;
       font-weight: bold;
     }
     nav a:hover {
       color: #ff4757;
     }
     .container {
-      padding: 50px;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.1rem;
     }
     .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
       margin-top: 30px;
     }
     .button-container a {
-      display: inline-block;
-      margin: 10px;
+      flex: 1 1 150px;
+      max-width: 220px;
       padding: 12px 25px;
       background: #ff4757;
       color: white;
@@ -41,6 +53,7 @@
       border-radius: 8px;
       font-weight: bold;
       transition: background 0.3s ease;
+      text-align: center;
     }
     .button-container a:hover {
       background: #ff6b81;
@@ -53,9 +66,9 @@
     <a href="about.html">About</a>
   </nav>
   <div class="container">
-    <h1>Welcome to the FAMG Website!🌐</h1>
+    <h1>Welcome to the FAMG Website! 🌐</h1>
     <p>This is the <strong>Home Page</strong>.</p>
-    
+
     <div class="button-container">
       <a href="https://sites.google.com/view/the-famg/home" target="_blank">Other Website</a>
       <a href="https://www.youtube.com/@THE-FAMG" target="_blank">YouTube</a>
