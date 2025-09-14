@@ -5,55 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - The FAMG</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #111, #444);
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
       color: white;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     nav {
-      background: #333;
+      background: rgba(0,0,0,0.5);
       padding: 15px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
     }
+
     nav a:hover {
       color: #1e90ff;
     }
+
     .container {
-      padding: 80px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 20px;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     }
+
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
     }
-    .button-container {
-      margin-top: 30px;
-    }
+
     .button-container a {
       display: inline-block;
       padding: 15px 30px;
-      background: #1e90ff;
+      background: rgba(0,0,0,0.5);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
       font-size: 1.2rem;
       transition: background 0.3s ease;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
+
     .button-container a:hover {
-      background: #63b3ed;
+      background: rgba(0,0,0,0.7);
     }
+
   </style>
 </head>
 <body>
